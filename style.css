@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.search{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+
+
+.search img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.search .content{
+    color:#fff;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.search h1{
+    font-size: 2.65rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+/* .search p{
+    font-size: 1.5rem;
+    margin-top: 8px
+} */
+.search .search-box{
+    height: 55px;
+    margin:45px 0;
+    position: relative;
+}
+.search-box i{
+    position: absolute;
+    left:20px;
+    top:50%;
+    font-size: 1.4rem;
+    color:#8d8d8d;
+    transform: translateY(-50%);
+}
+button, input, i{
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.search-box input{
+    width:100%;
+    height: 100%;
+    outline: none;
+    border:none;
+    font-size: 1.1rem;
+    padding-left:55px ;
+    border-radius: 5px;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .images{
+    gap:15px;
+    max-width:95% ;
+    margin-top: 40px;
+    columns: 5 340px;
+}
+.images .card{
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+.images .card .details{
+    position: absolute;
+    /* ---------------- */
+    bottom:-100px;   
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.7), transparent);
+    transition:bottom 0.1s ease ;
+}
+.images .card:hover .details{
+    bottom: 0;   
+}
+ .photographer{
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+ .photographer i{
+    font-size:1.4rem;
+    margin-right:10px;
+}
+.details .photographer span{
+   font-size: 1.05rem;   
+}
+.card .details button{
+    cursor: pointer;
+    padding: 3px 8px;
+    font-size: 1.1rem;
+    background: #fff;
+}
+.images img{
+    width:100%;
+}
+.gallery .load-more{
+    margin: 50px 0;
+    color:white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 12px 27px ;
+    background: #8a6cff;
+}
+.gallery .load-more .disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.lightbox {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    display: none;
+}
+.lightbox.show{
+     display: block;
+}
+.lightbox .wrapper{
+    position: absolute;
+    left:50%;
+    top:50%;
+    background: #fff;
+    border-radius: 5px;
+    padding:20px;
+    max-width: 850px;
+    transform: translate(-50%, -50%);
+
+}
+.wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .photographer{
+    color:#333;
+
+}
+header .photographer i{
+    font-size: 1.7rem;
+
+}
+header .photographer span{
+    font-size: 1.2rem;
+}
+header .buttons i{
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    font-size:1.2rem ;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    background:#8a6cff ;
+}
+.buttons i:last-child{
+    margin-left:10px;
+    background: #6c757d;
+}
+.preview-img{
+    display: flex;
+    margin-top:25px ;
+    justify-content: center;
+    
+}
+.wrapper .preview-img .img{
+    max-height: 65vh;
+    max-width: 90vh;
+}
+.preview-img .img img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+/*--------------------------Contact form------------*/
+#contact{
+   background-color: rgba(0, 0, 0.4);
+  
+    color: whitesmoke;
+}
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-container{
+    display: flex;
+}
+.text-center {
+    text-align: center;
+}
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+#contact-form {
+    margin-left: 20%;
+}
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+outline: none;
+}
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+    margin-bottom: 3rem;
+}
+
+
+/* ----------media-screen------- */
+@media only screen and (max-width:768px) {
+    
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container{
+        
+        flex-wrap: wrap;
+    }
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
+@media only screen and (max-width: 700px){
+    .search .search-box{
+        margin: 45px 20px;
+       
+    }
+    .search p{
+        font-size: 10px;
+        padding-right:10px ;
+    }
+}
+/* -----------animation------------------- */
+
+.search p {
+    color: #fff;
+    font-size: 1.5rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(167, 165, 161); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .15em; /* Adjust as needed*/
+    animation: 
+      typing 7s steps(30, end) alternate-reverse infinite,
+      blink-caret .7s step-end infinite;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(167, 165, 161) }
+  }

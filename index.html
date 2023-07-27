@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/2659/2659360.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="lightbox">
+        <div class="wrapper">
+            <header>
+                <div class="photographer">
+                    <i class="uil uil-camera"></i>
+                    <span></span>
+                </div>  
+                <div class="buttons">
+                    <i class="uil uil-import"></i>
+                    <i class="uil uil-times"></i>
+                </div>
+            </header>
+            <div class="preview-img">
+                <div class="img"><img src="" alt="previe-img"></div>
+            </div>
+        </div>
+    </div>
+    <section class="search">
+        <img src="images/cum.jpg" alt="search-img">
+       
+        <div class="content">
+            <h1>Images Gallery</h1>
+            <p>Search and download any images</p>
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search-images">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <ul class="images"></ul>
+        <button class="load-more">Load More</button>
+    </section>
+    <section id="contact">
+        <h1 class="section-heading mb75px">
+            <span>
+                <i class="far fa-address-card"></i>
+            </span>
+            <span> Contact </span>
+        </h1>
+         <div id="contact-container">
+              <div id="contact-form-container">
+                      <form  id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="email" type="email" placeholder="Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+
+                      </form>
+
+              </div>
+              <div id ="my-details-container">
+                <h3>
+                    Get In Touch
+                </h3>
+                <p>
+                    Hi, my name is Pallab Pal. I am a student of IIT Kharagpur, currently I am studying M.Tech in computer Science and data processing
+                    from department of mathematics.
+                </p>
+                <h3> My Address </h3>
+                <div class="my-details-info-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>West Bengal, India</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="far fa-envelope"></i>
+                    <span>pallabpal0024@gmail.com</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>9593677823</span>
+                </div>
+
+              </div>
+              
+              
+         </div>
+         <div class="text-center social-icons">
+            <ul class="horizontal-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/pallab-pal-797700254/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                
+
+                
+
+                <li>
+                    <a href="https://github.com/Pallabpal" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+               
+            </ul>
+         </div>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
