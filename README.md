@@ -23,4 +23,4 @@ To create this image search gallery,I used the following languages:</br>
 
 2. CSS: To style and make the web page visually appealing and responsive.</br>
 
-J. avaScript: To handle user interactions, image search functionality, and download feature.</br>
+3. JavaScript: To handle user interactions, image search functionality, and download feature.</br>
